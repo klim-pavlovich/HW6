@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+button {
+	color: #222;
+	font-family: Lato;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+h4 {
+	color: #f16d7f;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+h5 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+}
+
+.header {
+	width: 100vw;
+	height: 75px;
+	background-color: #222;
+	padding: 18px 230px 20px 230px;
+	/* display: flex;
+	justify-content: space-between; */
+}
+
+.navMenu {
+	display: flex;
+	justify-content: space-between;
+	gap: 860px;
+	align-items: center;
+}
+
+.leftNavMenu {
+	display: flex;
+	gap: 40px;
+}
+
+.rightNavMenu {
+	display: flex;
+	gap: 40px;
+}
+
+.navMenuButton {
+	background-color: transparent;
+	border: none;
+}
+
+.container {
+	width: 1140px;
+	align-self: center;
+	align-content: center;
+	margin: 0 auto;
+}
+
+.previewSection {
+	display: flex;
+	flex-direction: row;
+	height: 764px;
+	background-color: #f1e4e6;
+	align-content: flex-start;
+}
+
+.previewSectionLeft {
+	width: 50vw;
+	align-self: center;
+}
+
+.previewSectionRight {
+	width: 50vw;
+}
+
+.brandTag {
+	margin-top: 289px;
+	margin-left: 64px;
+	border-left: #f16d7f solid;
+	border-left-width: 12px;
+}
+
+.brandTagText {
+	width: 377px;
+	margin-left: 16px;
+}
+
+.brandTagTextPinkWord {
+	color: #f16d7f;
+}
+
+.offerCardListSection {
+	padding-top: 65px;
+	padding-bottom: 96px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	align-items: center;
+	gap: 30px;
+}
+
+.offerCardCommonStyles {
+	background-color: rgba(33, 22, 22, 0.7);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.offerCardCommonStyles > img {
+	width: 100%;
+}
+
+.offerCardSmall {
+	width: 360px;
+	height: 260px;
+}
+
+.offerCardBig {
+	width: 1140px;
+	height: 180px;
+	grid-column: span 3;
+	position: relative;
+}
+
+.promoText {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	text-align: center;
+}
+
+.offerCardImage {
+	/* opacity: 0.7; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.feturedItemsSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+}
+
+.feturedItemsSectionDescription {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 6px;
+}
+
+.feturedCard {
+	background-color: #f8f8f8;
+	width: 360px;
+	height: 581px;
+}
+
+.feturedCardList {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	gap: 30px;
+}
+
+.feturedItemDescription {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.feturedItemDescription p {
+	font-weight: 300;
+}
+
+.feturedItemDescriptionPrice {
+	color: #f16d7f;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.browseAllProduct {
+	color: #f26376;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 60px;
+	border: 1px #f16d7f solid;
+	padding: 15px 39px 14px;
+	background-color: #fff;
+}
