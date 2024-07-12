@@ -12,10 +12,13 @@ h2,
 h3,
 h4,
 a,
-p,
 button {
 	color: #222;
 	font-family: Lato;
+}
+
+button {
+	cursor: pointer;
 }
 
 h1 {
@@ -51,8 +54,21 @@ h6 {
 }
 
 p {
+	font-family: Lato;
 	font-size: 14px;
 	font-weight: 400;
+	color: #9f9f9f;
+}
+
+main {
+	margin-top: 74px;
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 body {
@@ -66,18 +82,19 @@ body {
 
 .header {
 	width: 100vw;
-	height: 75px;
+	height: 74px;
 	background-color: #222;
-	padding: 18px 230px 20px 230px;
-	/* display: flex;
-	justify-content: space-between; */
+	padding: 19px 230px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
 }
 
 .navMenu {
 	display: flex;
 	justify-content: space-between;
-	gap: 860px;
 	align-items: center;
+	position: relative;
 }
 
 .leftNavMenu {
@@ -107,12 +124,14 @@ body {
 	flex-direction: row;
 	height: 764px;
 	background-color: #f1e4e6;
-	align-content: flex-start;
+	align-content: center;
 }
 
 .previewSectionLeft {
 	width: 50vw;
 	align-self: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .previewSectionRight {
@@ -177,16 +196,6 @@ body {
 	text-align: center;
 }
 
-.offerCardImage {
-	/* opacity: 0.7; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
 .feturedItemsSection {
 	display: flex;
 	flex-direction: column;
@@ -212,13 +221,12 @@ body {
 .feturedCardList {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
 	align-items: center;
 	gap: 30px;
 }
 
 .feturedItemDescription {
-	padding: 24px;
+	padding: 24px 16px;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -234,7 +242,7 @@ body {
 	font-weight: 400;
 }
 
-.browseAllProduct {
+.browseAllProductButton {
 	color: #f26376;
 	font-size: 16px;
 	font-weight: 400;
@@ -242,4 +250,79 @@ body {
 	border: 1px #f16d7f solid;
 	padding: 15px 39px 14px;
 	background-color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+	.header {
+		padding: 18px 32px;
+	}
+
+	.container {
+		width: 735px;
+	}
+
+	.navMenu {
+		gap: 424px;
+	}
+
+	.previewSection {
+		height: 368px;
+	}
+
+	.previewSectionLeftImage {
+		height: 368px;
+		width: 368px;
+	}
+
+	.brandTag {
+		margin-top: 139px;
+		margin-left: 39px;
+		/* border-left-width: 12px; */
+	}
+
+	h1 {
+		font-size: 44px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.offerCardListSection {
+		padding-bottom: 110px;
+		gap: 20px;
+	}
+
+	.offerCardSmall {
+		width: 232px;
+		height: 168px;
+	}
+
+	.offerCardBig {
+		width: 735px;
+		height: 116px;
+	}
+
+	.feturedItemsSectionDescription {
+		gap: 3.3px;
+	}
+
+	.feturedCardList {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+
+	.feturedItemDescription {
+		padding: 25px 29px 20px 16px;
+		gap: 0px;
+	}
+
+	.feturedItemDescription h6 {
+		margin-bottom: 13px;
+	}
+
+	.feturedItemDescription p {
+		font-weight: 300;
+		margin-bottom: 18px;
+	}
 }
