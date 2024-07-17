@@ -250,8 +250,6 @@ body {
 	height: 581px;
 }
 
-/* Блок для затемнения*/
-
 .feturedCard-image {
 	position: relative;
 }
@@ -284,11 +282,11 @@ body {
 }
 
 .feturedCard-image:hover img {
-	opacity: 1; /* Затемнение изображения */
+	opacity: 1;
 }
 
 .feturedCard-image:hover .feturedCard-overlay {
-	opacity: 1; /* Показываем overlay при наведении */
+	opacity: 1;
 }
 
 .feturedCardList {
@@ -378,7 +376,7 @@ body {
 }
 
 .subscribeSection__left {
-	position: relative; /* Контент будет поверх псевдоэлемента */
+	position: relative;
 	z-index: 1;
 	padding: 97px 0px 126px 228px;
 	display: flex;
@@ -401,7 +399,7 @@ body {
 }
 
 .subscribeSection__right {
-	position: relative; /* Контент будет поверх псевдоэлемента */
+	position: relative;
 	z-index: 1;
 	padding: 150px 230px 156px 0px;
 }
@@ -411,7 +409,7 @@ body {
 	max-height: 61px;
 	text-align: center;
 	font-size: 18px;
-	line-height: 167.2%; /* 40.128px */
+	line-height: 167.2%;
 	margin-bottom: 32px;
 }
 
