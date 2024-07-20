@@ -11,7 +11,10 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 a,
+li,
 button {
 	color: #222;
 	font-family: Lato;
@@ -65,8 +68,7 @@ main {
 }
 
 header {
-	width: 100%;
-	display: flex;
+	width: 100vw;
 	justify-content: space-between;
 }
 
@@ -133,6 +135,7 @@ body {
 }
 
 .previewSection {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	height: 764px;
@@ -150,6 +153,56 @@ body {
 
 .previewSectionRight {
 	width: 50vw;
+}
+
+.dropdownMenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 232px;
+	background: #fff;
+	padding: 32px 0px 32px 33px; /* правый отступ поставил 0, так как по-другому текст переносился на вторую строку*/
+}
+
+.hidden {
+	display: none;
+}
+
+.dropdownMenu ul {
+	list-style-type: none;
+}
+.dropdownMenu a {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.dropdownMenu h6 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 24px;
+}
+
+.dropdownMenu__categories {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.dropdownMenu__category {
+	color: #f16d7f;
+}
+
+.dropdownMenu__subcategories {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+}
+
+.dropdownMenu__subcategory {
+	color: #6f6e6e;
+	padding: 0px 0px 0px 21.5px;
 }
 
 .brandTag {
@@ -361,6 +414,13 @@ body {
 	display: flex;
 	flex-direction: row;
 	gap: 223px;
+	justify-content: center;
+	align-items: center;
+	padding: 97px 0px 126px 0px;
+}
+
+.subscribeSection p {
+	text-align: center;
 }
 
 .subscribeSection::before {
@@ -378,7 +438,6 @@ body {
 .subscribeSection__left {
 	position: relative;
 	z-index: 1;
-	padding: 97px 0px 126px 228px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -401,7 +460,6 @@ body {
 .subscribeSection__right {
 	position: relative;
 	z-index: 1;
-	padding: 150px 230px 156px 0px;
 }
 
 .subscribeSection__right h6 {
@@ -427,7 +485,7 @@ body {
 	width: 256px;
 	height: 49px;
 	padding: 7px 64px 6px 22px;
-	border-radius: 15px 0 0 15px;
+	border-radius: 25px 0 0 25px;
 	border: none;
 }
 
@@ -447,9 +505,11 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	gap: 600px;
 	background-color: #222224;
 	width: 100%;
+	padding: 24px 0px 23px 0px;
 }
 
 .footer__rights {
@@ -457,15 +517,13 @@ body {
 	font-family: Lato;
 	font-size: 16px;
 	font-weight: 400;
-	min-width: 332px;
-	padding: 30px 0px 30px 235px;
+	/* min-width: 332px; */
 }
 
 .footer__socialNetworks {
 	display: flex;
 	flex-direction: row;
 	gap: 7.29px;
-	padding: 24px 230px 23px 0px;
 }
 
 .socialNetworks__item {
@@ -560,6 +618,30 @@ body {
 	.feturedItemDescription p {
 		font-weight: 300;
 		margin-bottom: 18px;
+	}
+
+	.featuresSection {
+		flex-direction: column;
+		gap: 48.37px;
+		padding: 48.16px 204px 64px 204px;
+	}
+
+	.subscribeSection {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	.subscribeSection__right h6 {
+		line-height: 162%;
+	}
+
+	.footer {
+		padding: 24px 0px 23px;
+		gap: 305px;
+	}
+
+	.footer__rights {
+		min-width: 251px;
 	}
 }
 
@@ -666,5 +748,33 @@ body {
 
 	.browseAllProductButton {
 		margin-bottom: 85px;
+	}
+
+	.featuresSection {
+		flex-direction: column;
+		gap: 47px;
+		padding: 48px 0px 81px;
+	}
+
+	.subscribeSection {
+		flex-direction: column;
+		/* width: 100vw; */
+		gap: 59px;
+		padding: 64px 0px 110px;
+	}
+
+	.subscribeSection p {
+		font-size: 18px;
+	}
+
+	.subscribeSection h6 {
+		margin-bottom: 22px;
+		line-height: 153.2%;
+	}
+
+	.footer {
+		flex-direction: column-reverse;
+		gap: 40px;
+		padding: 43px 0px 9px;
 	}
 }
